@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gYS-vp-4Mh">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="EVg-r8-sR0">
+            <objects>
+                <viewController storyboardIdentifier="loginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gYS-vp-4Mh" customClass="LoginViewController" customModule="iOSCourseWork1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bs5-TH-7WH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="ytt-Qj-twN">
+                                <rect key="frame" x="20" y="401" width="374" height="94"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Tg-5s-lKY">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Er-QL-B0l">
+                                        <rect key="frame" x="0.0" y="60" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x80-NF-97g">
+                                <rect key="frame" x="175.5" y="569" width="63.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log In"/>
+                                <connections>
+                                    <action selector="loginPressed:" destination="gYS-vp-4Mh" eventType="touchUpInside" id="U02-zf-Qzh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BmH-kU-Jv9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="x80-NF-97g" firstAttribute="top" secondItem="7Er-QL-B0l" secondAttribute="bottom" constant="74" id="0CS-M9-Lab"/>
+                            <constraint firstItem="ytt-Qj-twN" firstAttribute="leading" secondItem="BmH-kU-Jv9" secondAttribute="leading" constant="20" id="XBD-pb-gbF"/>
+                            <constraint firstItem="ytt-Qj-twN" firstAttribute="centerY" secondItem="Bs5-TH-7WH" secondAttribute="centerY" id="c2I-i3-ucm"/>
+                            <constraint firstItem="x80-NF-97g" firstAttribute="centerX" secondItem="Bs5-TH-7WH" secondAttribute="centerX" id="vC4-hv-wti"/>
+                            <constraint firstItem="BmH-kU-Jv9" firstAttribute="trailing" secondItem="ytt-Qj-twN" secondAttribute="trailing" constant="20" id="wWr-fr-hcO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xsi-GY-5C3"/>
+                    <connections>
+                        <outlet property="loginButton" destination="x80-NF-97g" id="oMO-sS-X9K"/>
+                        <outlet property="loginTF" destination="8Tg-5s-lKY" id="Xdd-L8-npM"/>
+                        <outlet property="passwordTF" destination="7Er-QL-B0l" id="ltf-H7-6O9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Imn-Vd-KW5" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8789.855072463768" y="29.464285714285712"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
